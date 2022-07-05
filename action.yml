@@ -20,6 +20,9 @@ inputs:
     description: 
     required: false
     default: latest
+  gh-pat: 
+    description:
+    required: true
 
 
 runs: 
@@ -28,7 +31,7 @@ runs:
     - uses: actions/checkout@v3
       with:
         repository: awazevr/amazon-terraform-setup-action
-        token: ${{ secrets.PAT }}
+        token: ${{ inputs.gh-pat }}
       
     - name: starting setup 
       shell: bash
