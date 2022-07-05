@@ -25,7 +25,9 @@ inputs:
 runs: 
   using: "composite"
   steps: 
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+      with:
+        repository: awazevr/amazon-terraform-setup-action
       
     - name: starting setup 
       shell: bash
