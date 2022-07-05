@@ -25,6 +25,8 @@ inputs:
 runs: 
   using: "composite"
   steps: 
+    - uses: actions/checkout@v2
+      
     - name: starting setup 
       shell: bash
       run: echo "starting composite action"
