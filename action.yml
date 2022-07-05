@@ -28,6 +28,7 @@ runs:
     - uses: actions/checkout@v3
       with:
         repository: awazevr/amazon-terraform-setup-action
+        token: ${{github.token}}
       
     - name: starting setup 
       shell: bash
