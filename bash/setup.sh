@@ -1,0 +1,1 @@
+echo "Running AWS and Terraform/Terragrunt setup"

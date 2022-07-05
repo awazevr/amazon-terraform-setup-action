@@ -1,0 +1,56 @@
+name: AWS and Terraform/Terragrunt setup
+description:  Composite action for setting up AWS credentials and Terraform/Terragrunt
+
+
+inputs:
+  aws-region: 
+    description:
+    required: true
+  aws-account-id:
+    description:
+    required: true
+  ssh-key-shared-modules:
+    description: 
+    required: true
+  terraform-version:
+    description: 
+    required: false
+    default: latest
+  terragrunt-version: 
+    description: 
+    required: false
+    default: latest
+
+
+runs: 
+  using: "composite"
+  steps: 
+    - name: starting setup 
+      runs: echo "starting composite action"
+    
+    -runs: bash/setup.sh
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@master
+      with:
+        aws-region: ${{ inputs.aws-region }}
+        role-to-assume: arn:aws:iam::${{ inputs.aws-account-id }}:role/github
+
+    - run: aws sts get-caller-identity
+
+    - name: Setup infra modules deploy key
+      run: |
+        mkdir ~/.ssh
+        echo "${{ inputs.ssh-key-shared-modules }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -t rsa github.com
+    - name: Install Terraform
+      uses: hashicorp/setup-terraform@v2
+      with:
+        terraform_version: ${{inputs.terraform-version}}
+        terraform_wrapper: false
+
+    - name: Setup Terragrunt
+      uses: autero1/action-terragrunt@v1.1.0
+      with:
+        terragrunt_version: ${{inputs.terragrunt-version}}
