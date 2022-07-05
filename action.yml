@@ -26,9 +26,12 @@ runs:
   using: "composite"
   steps: 
     - name: starting setup 
+      shell: bash
       run: echo "starting composite action"
     
-    - run: bash/setup.sh
+    - name: bash script
+      shell: bash
+      run: bash/setup.sh
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@master
