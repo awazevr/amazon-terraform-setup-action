@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.3...v1.0.4) (2022-07-06)
+
+
+### Bug Fixes
+
+* added AWS credential login ([7efd002](https://github.com/awazevr/amazon-terraform-setup-action/commit/7efd002e9a1f233d8b6e9ecb4b7650415fa8dfc2))
+
 ## [1.0.3](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.2...v1.0.3) (2022-07-06)
 
 
