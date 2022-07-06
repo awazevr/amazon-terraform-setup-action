@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.5...v1.0.6) (2022-07-06)
+
+
+### Bug Fixes
+
+* added shell to Setup infra modules deploy key ([b2b65a9](https://github.com/awazevr/amazon-terraform-setup-action/commit/b2b65a9b9a55b1e8aa924e86c00bbb7c2b5a9d51))
+
 ## [1.0.5](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.4...v1.0.5) (2022-07-06)
 
 
