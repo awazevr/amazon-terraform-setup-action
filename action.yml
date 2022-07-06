@@ -23,7 +23,7 @@ inputs:
     description: 
     required: false
     default: latest
-    
+
 outputs:
   script:
     description: 
@@ -49,10 +49,10 @@ runs:
     #   id: setup-script
 
     - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@master
-        with:
-          aws-region: ${{ secrets.AWS_REGION }}
-          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/github
+      uses: aws-actions/configure-aws-credentials@master
+      with:
+        aws-region: ${{ secrets.AWS_REGION }}
+        role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/github
 
     - run: aws sts get-caller-identity
 
