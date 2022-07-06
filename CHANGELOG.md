@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.6...v1.0.7) (2022-07-06)
+
+
+### Bug Fixes
+
+* corrected secrets to inputs ([ae8a326](https://github.com/awazevr/amazon-terraform-setup-action/commit/ae8a3265fa0f91dcd7eb0793c2a954f358ea1441))
+
 ## [1.0.6](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.5...v1.0.6) (2022-07-06)
 
 
