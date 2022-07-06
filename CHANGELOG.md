@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.4...v1.0.5) (2022-07-06)
+
+
+### Bug Fixes
+
+* corrected syntax error ([83e51b2](https://github.com/awazevr/amazon-terraform-setup-action/commit/83e51b2b7b82e350a02574b3976ed1d21cf6d13c))
+
 ## [1.0.4](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.3...v1.0.4) (2022-07-06)
 
 
