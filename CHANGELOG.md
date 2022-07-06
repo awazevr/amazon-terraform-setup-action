@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.2...v1.0.3) (2022-07-06)
+
+
+### Bug Fixes
+
+* changed path to script ([36981b7](https://github.com/awazevr/amazon-terraform-setup-action/commit/36981b7537ede55135380d71791248cf9138061e))
+
 ## [1.0.2](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.1...v1.0.2) (2022-07-06)
 
 
