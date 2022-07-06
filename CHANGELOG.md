@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.1...v1.0.2) (2022-07-06)
+
+
+### Bug Fixes
+
+* chmod on bash script ([09545b2](https://github.com/awazevr/amazon-terraform-setup-action/commit/09545b2f42e367f4159cd97030c46ada4f884917))
+
 ## [1.0.1](https://github.com/awazevr/amazon-terraform-setup-action/compare/v1.0.0...v1.0.1) (2022-07-05)
 
 
