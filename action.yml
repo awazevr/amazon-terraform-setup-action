@@ -37,7 +37,8 @@ runs:
       shell: bash
       run: echo "starting composite action"
     
+    # needs chmod +x for scripts
     - name: bash script
       shell: bash
-      run: ./bash/setup.sh
+      run: bash/setup.sh
 
